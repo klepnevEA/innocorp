@@ -1,0 +1,141 @@
+a {
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    transition: 0.3s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 60px;
+    margin-left: -4px;
+}
+
+h5 {
+    font-family: 'MullerNarrow-ExtraBold', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.nomar {
+    margin: 0 !important;
+}
+
+.nopad {
+    padding: 0 !important;
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: center !important;
+}
+
+.btn-success {
+    color: #000;
+    background-color: #c5da40;
+    border-color: #c5da40;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #c5da40;
+    background-color: #40404a;
+    border-color: #403f4a;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    padding: 15px 40px 17px 40px;
+    font-size: 22px;
+    line-height: 1.33;
+    border-radius: 60px;
+    margin: 4px;
+}
+
+.btn-scroll-top {
+    display: inline-block;
+    position: fixed;
+    bottom: -100px;
+    right: 20px;
+    background-color: #c5da40;
+    border-color: #c5da40;
+    color: #000;
+    font-size: 22px;
+    line-height: 1.33;
+    border-radius: 60px;
+    text-transform: uppercase;
+    padding: 15px 40px 17px 40px;
+    z-index: 1000;
+    transition: 0.3s;
+    
+    &:hover {
+        color: #c5da40;
+        background-color: #40404a;
+        border-color: #403f4a;       
+    }
+
+    &.active {
+        bottom: 20px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1260px;
+    }
+}
+
+@media (max-width: 991px) {
+    .getting-head-v {
+        display: none;
+    }
+    .getting-head-h {
+        display: block;
+    }
+}
+
+
+/* Parallax base styles   --------------------------------------------- */
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax__layer--back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+
+/* demo styles  --------------------------------------------- */
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
